@@ -1,0 +1,49 @@
+{
+  "name": "mohammedmanssour/tratta-laravel-sdk",
+  "description": "A Laravel client for the Tratta REST API",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "tratta-laravel-sdk",
+    "tratta"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Mohammedmanssour\\TrattaLaravelSdk\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mohammedmanssour\\TrattaLaravelSdk\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Mohammed Manssour",
+      "email": "hello@mohammedmanssour.me"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "spatie/laravel-package-tools": "^1.16",
+    "illuminate/contracts": "^11.1"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.17",
+    "nunomaduro/collision": "^8.1.1||^7.10.0",
+    "phpunit/phpunit": "^11",
+    "orchestra/testbench": "^9.0.0||^8.22.0"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "git config core.hooksPath .hooks"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mohammedmanssour\\TrattaLaravelSdk\\Providers\\TrattaServiceProvider"
+      ]
+    }
+  }
+}
