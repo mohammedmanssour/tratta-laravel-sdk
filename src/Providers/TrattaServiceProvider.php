@@ -30,9 +30,9 @@ class TrattaServiceProvider extends ServiceProvider
         $this->app->singleton(
             TrattaService::class,
             fn () => new TrattaService(
-                config('tratta-laravel-sdk.org_id'),
-                config('tratta-laravel-sdk.api_key'),
-                TrattaEnvironment::from(config('tratta-laravel-sdk.environment'))
+                config('tratta.org_id'),
+                config('tratta.api_key'),
+                TrattaEnvironment::from(config('tratta.environment'))
             )
         );
     }

@@ -7,6 +7,7 @@ use Mohammedmanssour\TrattaLaravelSdk\Services\TrattaService;
 
 /**
  * @method static \Illuminate\Http\Client\PendingRequest client()
+ * @method static \Mohammedmanssour\TrattaLaravelSdk\Services\TrattaCustomerService customer()
  */
 class Tratta extends Facade
 {
